@@ -1,0 +1,97 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh; /* Ocupa a altura total da tela */
+  background-color: #1e1e1e; /* Fundo preto um tom mais claro */
+}
+
+.sidebar {
+  width: 100px; /* Largura da sidebar */
+  background-color: black; /* Sidebar preta */
+  color: white; /* Texto branco */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-topbar {
+  height: 60px; /* Altura da sidebar-topbar */
+  background: linear-gradient(to bottom, #333333, black); /* Degradê do azul claro para preto */
+  color: black; /* Texto preto */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 0; /* Remove espaçamento interno */
+  border-right: 2px solid black; /* Linha preta no lado direito */
+  border-bottom: 1px solid #1c1c1c; /* Linha na parte inferior, um tom de preto mais claro */
+}
+
+.button-container {
+  display: flex; /* Usar flexbox para centralizar */
+  flex-direction: column; /* Colocar os botões em coluna */
+  align-items: center; /* Centraliza os botões horizontalmente */
+  flex-grow: 1; /* Permite que o contêiner ocupe o espaço disponível */
+  justify-content: center; /* Centraliza os botões verticalmente */
+}
+
+.main-content {
+  flex: 1; /* O restante do espaço */
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 60px; /* Altura da top bar */
+  background: linear-gradient(to bottom, #333333, black); /* Degradê da cor cinza escuro para preto */
+  color: white; /* Texto branco */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  padding: 0; /* Remove espaçamento interno */
+  justify-content: center; /* Centraliza horizontalmente */
+}
+
+.topbar img {
+  max-height: 50px; /* Define a altura máxima da imagem */
+  pointer-events: none;
+  user-select: none;
+}
+
+.content {
+  flex: 1; /* O restante do espaço abaixo da top bar */
+  color: white; /* Texto branco */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilos para os botões da sidebar */
+.sidebar-button {
+  background-color: #222121; /* Cor do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 5px; /* Espaçamento interno */
+  margin: 35px 0; /* Margem superior e inferior */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  border-radius: 8px; /* Cantos arredondados */
+  width: 50%; /* Altere para a porcentagem desejada ou um valor fixo */
+  transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+
+.sidebar-button:hover {
+  background-color: #444444; /* Cor do botão ao passar o mouse */
+}
+
+.menu-logo {
+  max-height: 100px; /* Ajusta a altura máxima da imagem */
+  /* Adicione mais estilos se necessário, como margens ou padding */
+  pointer-events: none;
+  user-select: none;
+}
